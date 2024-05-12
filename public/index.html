@@ -4,79 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - W3Program</title>
-    <style>
-        .custom-shape-divider-bottom-1714842699 {
-            left: 0;
-            width: 100%;
-            overflow: hidden;
-            line-height: 0;
-            transform: rotate(180deg);
-        }
-
-        .custom-shape-divider-bottom-1714842699 svg {
-            position: relative;
-            display: block;
-            width: calc(100% + 1.3px);
-            height: 105px;
-        }
-
-        .custom-shape-divider-bottom-1714842699 .shape-fill {
-            fill: #EAEAEA;
-        }
-    </style>
     <link rel="icon" href="assets/img/head.png">
     <link rel="stylesheet" href="output.css">
 </head>
 <body class="font-opensans">
-    <header class="grid sticky top-0 z-50 bg-white">
-        <div id="container" class="container max-w-xl2 pl-2 pr-2 2xl:max-w-xl xl:max-w-lg lg:max-w-md md:max-w-sm sm:max-w-xs xs:w-full">
-            <nav class="grid grid-flow-col place-items-center text-xl 2xl:text-base xl:text-base">
-                
-                <a href="#" class="justify-self-start"><img src="assets/img/head.png" alt="logo" width="100px" height="100px" class="size-[100px] 2xl:size-20 xl:size-16"></a>
-                
-                
-                <form action="" method="get" class="grid place-items-center grid-flow-col border border-soft-blue rounded-[30px] h-11 w-80 overflow-hidden 2xl:w-72 xl:w-64 xl: 2xl:h-10">
-                    <input type="search" name="search" placeholder="Search . . ." class="place-self-center italic [&::-webkit-search-cancel-button]:hidden border-none rounded-md focus:outline-none">
-                    <button type="submit" class="size-11 rounded-full hover:bg-black hover:bg-opacity-5 transition duration-300 ease-in-out 2xl:size-10 xl:size-10">
-                        <svg class="ml-auto mr-auto size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
-                            <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z" clip-rule="evenodd" />
-                        </svg>
-                    </button>
-                </form>
-
-                <ul class="flex flex-row gap-5 font-semibold">
-                    <li class="hover:text-soft-blue duration-200 ease-in-out"><a href="#">HOME</a></li>
-                    <li class="hover:text-soft-blue duration-200 ease-in-out"><a href="course.html">COURSES</a></li>
-                    <li class="hover:text-soft-blue duration-200 ease-in-out"><a href="about.html">ABOUT</a></li>
-                    <li class="hover:text-soft-blue duration-200 ease-in-out"><a href="contact.html">CONTACT</a></li>
-                </ul>
-
-                <div class="justify-self-end">
-                    <button class="w-28 h-12 font-semibold text-white bg-soft-blue rounded-[30px] hover:bg-[#157ABE] duration-200 ease-in-out 2xl:w-24 2xl:h-10 xl:h-10"><a href="signup.html">Sign up</a></button>
-                    <button class="w-28 h-12 font-semibold bg-soft-blue bg-opacity-40 rounded-[30px] hover:bg-opacity-90 duration-200 ease-in-out 2xl:w-24 2xl:h-10 xl:h-10"><a href="login.html">Login</a></button>
-                </div>
-            </nav>
-        </div>
-    </header>
-    
+    <special-header></special-header>
     <!-- ENDS -->
 
     <!-- HOME -->
     <main>
-        <section id="home" class="bg-center bg-cover pt-20" style="background-image: url('assets/img/bghome.jpg');">
+        <section id="home" class="bg-center bg-cover pt-20 xs:pt-36" style="background-image: url('assets/img/bghome.jpg');">
             <div class="container max-w-xl2 pl-2 pr-2 2xl:max-w-xl xl:max-w-lg lg:max-w-md md:max-w-sm sm:max-w-xs xs:w-full">
                
                 <div class="grid place-items-center place-content-center grid-rows-3">
                     <div>
                         <h1 class="text-[64px] font-extrabold text-white text-center 2xl:text-5xl xl:text-4xl">Learn to Code</h1><br>
-                        <h2 class="text-2xl font-bold text-soft-blue text-center 2xl:text-lg xl:text-base">Interactive lessons and tutorials to teach 
+                        <h2 class="text-2xl font-bold text-soft-blue text-center 2xl:text-lg xl:text-base sm:px-6">Interactive lessons and tutorials to teach 
                             programming fundamentals.</h2>
                     </div>
 
-                    <form action="" method="get" class="grid place-items-center grid-flow-col bg-white rounded-[30px] w-[630px] h-[60px] overflow-hidden 2xl:w-[490px] 2xl:h-12 xl:w-[480px] xl:h-11" >
-                        <input type="search" name="search" id="" placeholder="Search courses offered, eg. HTML for Begginers" class=" w-[510px] text-xl font-bold [&::-webkit-search-cancel-button]:hidden border-none rounded-md pl-4 focus:outline-none 2xl:text-base 2xl:w-[400px] xl:text-base ">
-                        <button type="submit" class="bg-soft-blue w-[120px] h-[60px] rounded-tr-full rounded-br-full hover:bg-opacity-80 transition duration-200 ease-in-out 2xl:h-12 2xl:w-24 xl:h-11 xl:w-20">
-                            <svg class="text-white font-extrabold ml-auto mr-auto size-9 2xl:size-7 xl:size-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                    <form action="" method="get" class="grid place-items-center grid-flow-col bg-white rounded-[30px] w-[630px] h-[60px] overflow-hidden 2xl:w-[490px] 2xl:h-12 xl:w-[480px] xl:h-11 sm:w-96 xs:w-auto ">
+                        <input type="search" name="search" id="" placeholder="Search courses offered, eg. HTML for Begginers" class="w-[510px] text-xl font-semibold [&::-webkit-search-cancel-button]:hidden border-none rounded-md pl-4 focus:outline-none 2xl:text-base 2xl:w-[400px] xl:text-base sm:w-72 xs:w-auto sm:text-sm">
+                        <button type="submit" class="bg-soft-blue w-[120px] h-[60px] rounded-tr-full rounded-br-full hover:bg-opacity-80 transition duration-200 ease-in-out 2xl:h-12 2xl:w-24 xl:h-11 xl:w-20 sm:w-20 sm:justify-self-end xs:w-14">
+                            <svg class="text-white font-extrabold ml-auto mr-auto size-9 2xl:size-7 xl:size-6 sm:size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
                                 <path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z" clip-rule="evenodd" />
                             </svg>
                         </button>
@@ -88,8 +38,8 @@
                  </div>
 
             </div>
-            <div class="custom-shape-divider-bottom-1714842699">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <div class="left-0 w-full overflow-hidden leading-none transform rotate-180">
+                <svg class="relative block w-full h-[105px] fill-[#eaeaea]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
                     <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
                     <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
@@ -99,12 +49,13 @@
         
         <section class="bg-[#eaeaea]">
             <div class="container max-w-xl2 pl-2 pr-2 2xl:max-w-xl xl:max-w-lg lg:max-w-md md:max-w-sm sm:max-w-xs xs:w-full">
-                <div class="pt-24 pb-24 grid grid-cols-2 grid-rows-3 place-items-center text-xl 2xl:mx-20 2xl:text-base 2xl:pt-10  xl:mx-10 xl:text-sm xl:pt-0">
+
+                <div class="pt-24 pb-24 grid grid-cols-2 gap-y-7 grid-rows-3 place-items-center text-xl 2xl:mx-20 2xl:text-base 2xl:pt-10  xl:mx-10 xl:text-sm xl:pt-0  md:grid-cols-1 md:gap-y-0 md:mx-0 xs:px-5 xs:pb-0">
                     <h1 class="text-8xl font-extrabold 2xl:text-7xl xl:text-6xl">HTML</h1>
-                    <div class="row-span-3 w-[760px] h-[519px] grid place-items-center 2xl:w-[660px] 2xl:h-[419px]">
-                        <img src="assets/img/html.svg" alt="HTML code example" class="2xl:w-96 2xl:h-72  xl:w-80 xl:h-60">
+                    <div class="row-span-3 grid place-items-center md:row-start-4 xs:hidden">
+                        <img src="assets/img/html.svg" alt="HTML code example" class="2xl:w-96 2xl:h-72  xl:w-80 xl:h-60 md:size-full md:mt-4">
                     </div>
-                    <p class="font-bold text-justify w-[540px] 2xl:w-[500px] xl:w-[400px]">The standard markup language used to create and design documents on the World Wide Web. It provides the 
+                    <p class="font-bold text-justify w-[540px] 2xl:w-[500px] xl:w-[400px] lg:w-80 md:w-full md:leading-8">The standard markup language used to create and design documents on the World Wide Web. It provides the 
                         structure and framework for web pages by using a set of tags and attributes to define elements such as 
                         headings, paragraphs, links, images, and other content.</p>
                     <div class="grid grid-flow-row gap-7 2xl:gap-5 2xl:mt-3">
@@ -112,93 +63,196 @@
                         <button class="w-72 h-14 rounded-[30px] bg-dark-blue text-white font-bold hover:bg-[#293675] duration-200 ease-in-out 2xl:w-64 2xl:h-12  xl:w-56 xl:h-10"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Documentations</a></button>
                     </div>
                 </div>
+
             </div>
         </section>
 
         <section class="bg-soft-blue bg-opacity-15">
             <div class="container max-w-xl2 pl-2 pr-2 2xl:max-w-xl xl:max-w-lg lg:max-w-md md:max-w-sm sm:max-w-xs xs:w-full">
-                <div class="pt-24 pb-24 grid grid-cols-2 grid-rows-3 place-items-center text-xl 2xl:mx-20 2xl:text-base 2xl:py-10 xl:mx-10 xl:text-sm xl:pt-0">
-                    <div class="row-span-3 w-[760px] h-[519px] grid place-items-center">
-                        <img src="assets/img/css.svg" alt="HTML code example" class="2xl:w-96 2xl:h-72  xl:w-80 xl:h-60">
+
+                <div class="pt-24 pb-24 grid grid-cols-2 gap-y-7 grid-rows-3 place-items-center text-xl 2xl:mx-20 2xl:text-base 2xl:py-10 xl:mx-10 xl:text-sm xl:pt-0  md:grid-cols-1 md:gap-y-0 md:mx-0 xs:px-5 xs:pb-0">
+                    <div class="row-span-3 grid place-items-center md:row-start-4 xs:hidden">
+                        <img src="assets/img/css.svg" alt="CSS code example" class="2xl:w-96 2xl:h-72  xl:w-80 xl:h-60  lg:w-72   md:size-full md:mt-4">
                     </div>
                     <h1 class="text-[96px] font-extrabold 2xl:text-7xl xl:text-6xl">CSS</h1>
-                    <p class="font-bold text-justify w-[580px] 2xl:text-base 2xl:w-[500px] xl:w-[400px]">A styling language used to define the presentation of HTML and 
+                    <p class="font-bold text-justify w-[580px] 2xl:w-[500px] xl:w-[400px] lg:w-80  md:w-full md:leading-8">A styling language used to define the presentation of HTML and 
                         XML documents. It allows web developers to control the layout, colors, fonts, and other visual aspects of a 
-                        webpage. CSS works by targeting HTML elements and applying styles to modify their appearance and behavior, 
-                        helping to create visually appealing and user-friendly websites.</p>
+                        webpage. CSS works by targeting HTML elements and applying styles to modify their appearance and behavior</p>
                     <div class="grid grid-flow-row gap-7 2xl:gap-5 2xl:mt-3">
                         <button class="w-72 h-14 rounded-[30px] bg-soft-blue text-white font-bold hover:bg-[#157ABE] duration-200 ease-in-out 2xl:w-64 2xl:h-12  xl:w-56 xl:h-10"><a href="">Learn CSS</a></button>
                         <button class="w-72 h-14 rounded-[30px] bg-dark-blue text-white font-bold hover:bg-[#293675] duration-200 ease-in-out 2xl:w-64 2xl:h-12  xl:w-56 xl:h-10"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">Documentations</a></button>
                     </div>
                 </div>
+
             </div>
         </section>
 
         <section class="bg-[#FBB13C] bg-opacity-35">
             <div class="container max-w-xl2 pl-2 pr-2 2xl:max-w-xl xl:max-w-lg lg:max-w-md md:max-w-sm sm:max-w-xs xs:w-full">
-                <div class="pt-24 pb-24 grid grid-cols-2 grid-rows-3 place-items-center">
-                    <h1 class="text-[96px] font-extrabold">JavaScript</h1>
-                    <div class="row-span-3 w-[760px] h-[519px] grid place-items-center">
-                        <img src="assets/img/js.svg" alt="HTML code example">
+
+                <div class="pt-24 pb-24 grid grid-cols-2 gap-y-7 grid-rows-3  place-items-center text-xl 2xl:mx-20 2xl:text-base 2xl:py-10 xl:mx-10 xl:text-sm xl:pt-0  md:grid-cols-1 md:gap-y-0 md:mx-0 xs:px-5 xs:pb-0">
+                    <h1 class="text-[96px] font-extrabold 2xl:text-7xl xl:text-6xl">JavaScript</h1>
+                    <div class="row-span-3 grid place-items-center md:row-start-4 xs:hidden">
+                        <img src="assets/img/js.svg" alt="JavaScript code example" class="2xl:w-96 2xl:h-64  xl:w-80 xl:h-52   md:size-full md:mt-4">
                     </div>
-                    <p class="text-xl font-bold text-justify w-[580px]">Versatile programming language primarily used for creating 
+                    <p class="font-bold text-justify w-[580px]  2xl:w-[500px] xl:w-[400px] lg:w-80  md:w-full md:leading-8">Versatile programming language primarily used for creating 
                         interactive and dynamic web content. It runs on the client side of web applications, enabling manipulation of 
                         HTML and CSS, handling user interactions, and communicating with servers asynchronously.</p>
-                    <div class="grid grid-flow-row gap-7">
-                        <button class="w-72 h-14 rounded-[30px] bg-soft-blue text-white text-xl font-bold hover:bg-[#157ABE] duration-200 ease-in-out 2xl:w-64 2xl:h-12  xl:w-56 xl:h-10"><a href="">Learn JavaScript</a></button>
-                        <button class="w-72 h-14 rounded-[30px] bg-dark-blue text-white text-xl font-bold hover:bg-[#293675] duration-200 ease-in-out 2xl:w-64 2xl:h-12  xl:w-56 xl:h-10"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Documentations</a></button>
+                    <div class="grid grid-flow-row gap-7 2xl:gap-5 2xl:mt-3">
+                        <button class="w-72 h-14 rounded-[30px] bg-soft-blue text-white font-bold hover:bg-[#157ABE] duration-200 ease-in-out 2xl:w-64 2xl:h-12  xl:w-56 xl:h-10"><a href="">Learn JavaScript</a></button>
+                        <button class="w-72 h-14 rounded-[30px] bg-dark-blue text-white font-bold hover:bg-[#293675] duration-200 ease-in-out 2xl:w-64 2xl:h-12  xl:w-56 xl:h-10"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">Documentations</a></button>
                     </div>
                 </div>
+
             </div>
         </section>
         <!-- ENDS -->
+
         
         <!--COURSES ON HOME -->
         <section>
             <div class="container max-w-xl2 pl-2 pr-2 2xl:max-w-xl xl:max-w-lg lg:max-w-md md:max-w-sm sm:max-w-xs xs:w-full">
 
-                <div class="py-20">
-                    <h1 class="text-2xl font-semibold mb-10">Web Development</h1>
+                <div class="pt-14 pb-8 2xl:pb-5 text-2xl 2xl:text-xl xl:text-lg xs:px-5 xs:pb-0 xs:pt-8">
+                    <h1 class="font-semibold mb-10">Web Development</h1>
 
-                    <div class="relative px-10">
-                        <button type="button" onclick="scrolltoLeft()" class="absolute z-10 bg-white bg-opacity-50 shadow-black drop-shadow-md size-14 rounded-full left-0 top-1/2 transform -translate-y-1/2">
-                            <svg class="text-soft-blue stroke-soft-blue w-12 h-11 m-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                    <div class="relative px-10 2xl:px-6">
+                        <button type="button" onclick="scrolltoLeft('bt1')" class="absolute z-10 bg-white bg-opacity-50 shadow-black drop-shadow-md size-14 rounded-full left-0 top-1/2 transform -translate-y-1/2 2xl:size-10 xl:size-8">
+                            <svg class="text-soft-blue stroke-soft-blue m-auto size-10 2xl:size-6 xl:size-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                                 <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd" />
                             </svg>       
                         </button>
-                        <button type="button" onclick="scrolltoRight()" class="absolute z-10 bg-white bg-opacity-50 shadow-black drop-shadow-md size-14 rounded-full right-0 top-1/2 transform -translate-y-1/2">
-                            <svg class="text-soft-blue stroke-soft-blue w-12 h-11 m-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <button type="button" onclick="scrolltoRight('bt1')" class="absolute z-10 bg-white bg-opacity-50 shadow-black drop-shadow-md size-14 rounded-full right-0 top-1/2 transform -translate-y-1/2 2xl:size-10 xl:size-8">
+                            <svg class="text-soft-blue stroke-soft-blue m-auto size-10 2xl:size-6 xl:size-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                                 <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
-                            </svg>    
+                            </svg>
                         </button>
                    
-                        <div class="scrollContainer text-2xl text-white font-semibold grid grid-flow-col overflow-y-scroll no-scrollbar gap-5">
-                            <div class="w-80 h-44 bg-[#8F2D56] grid place-items-center grid-flow-col rounded-3xl">
+                        <div class="scrollContainer text-white font-semibold grid grid-flow-col overflow-y-scroll no-scrollbar gap-5">
+                            <div class="w-80 h-44 bg-[#8F2D56] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40">
                                 <p class="inline-block">JavaScript</p>
                                 <img src="assets/img/courses/js.svg" alt="JavaScript Course" class="w-28 h-32 ">
                             </div>
 
-                            <div class="w-80 h-44 bg-[#8F2D56] grid place-items-center grid-flow-col rounded-3xl">
+                            <div class="w-80 h-44 bg-[#8F2D56] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40">
                                 <p>React</p>
                                 <img src="assets/img/courses/react.svg" alt="JavaScript Course" class="w-36 h-32 ">
                             </div>
 
-                            <div class="w-80 h-44 bg-[#8F2D56] grid place-items-center grid-flow-col rounded-3xl">
+                            <div class="w-80 h-44 bg-[#8F2D56] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40">
                                 <p>Node JS</p>
                                 <img src="assets/img/courses/nodejs.svg" alt="JavaScript Course" class="w-32 h-36">
                             </div>
 
-                            <div class="w-80 h-44 bg-[#8F2D56] grid place-items-center grid-flow-col rounded-3xl">
+                            <div class="w-80 h-44 bg-[#8F2D56] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40">
+                                <p>Tailwind</p>
+                                <img src="assets/img/courses/tailwind.png" alt="JavaScript Course" class="w-36 h-24">
+                            </div>
+
+                            <div class="w-80 h-44 bg-[#8F2D56] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40">
+                                <p>Node JS</p>
+                                <img src="assets/img/courses/nodejs.svg" alt="JavaScript Course" class="w-32 h-36">
+                            </div>
+
+                            <div class="w-80 h-44 bg-[#8F2D56] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40">
                                 <p>Tailwind</p>
                                 <img src="assets/img/courses/tailwind.png" alt="JavaScript Course" class="w-36 h-24 ">
                             </div>
+                        </div>
+                    </div>
+                </div>
 
-                            <div class="w-80 h-44 bg-[#8F2D56] grid place-items-center grid-flow-col rounded-3xl">
+                <div class="py-8 2xl:pb-5 text-2xl 2xl:text-xl xl:text-lg xs:px-5 xs:pb-0">
+                    <h1 class="font-semibold mb-10">Machine Learning & Data Science</h1>
+
+                    <div class="relative px-10 2xl:px-6">
+                        <button type="button" onclick="scrolltoLeft('bt2')" class="absolute z-10 bg-white bg-opacity-50 shadow-black drop-shadow-md size-14 rounded-full left-0 top-1/2 transform -translate-y-1/2 2xl:size-10 xl:size-8">
+                            <svg class="text-soft-blue stroke-soft-blue m-auto size-10 2xl:size-6 xl:size-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd" />
+                            </svg>       
+                        </button>
+                        <button type="button" onclick="scrolltoRight('bt2')" class="absolute z-10 bg-white bg-opacity-50 shadow-black drop-shadow-md size-14 rounded-full right-0 top-1/2 transform -translate-y-1/2 2xl:size-10 xl:size-8">
+                            <svg class="text-soft-blue stroke-soft-blue m-auto size-10 2xl:size-6 xl:size-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                   
+                        <div class="scrollContainer text-white font-semibold grid grid-flow-col overflow-y-scroll no-scrollbar gap-5">
+                            <div class="w-80 h-44 bg-[#73D2DE] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40">
+                                <p class="inline-block">JavaScript</p>
+                                <img src="assets/img/courses/ml.svg" alt="Machine Learning Course" class="w-28 h-32">
+                            </div>
+
+                            <div class="w-80 h-44 bg-[#73D2DE] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40">
+                                <p>React</p>
+                                <img src="assets/img/courses/ds.svg" alt="Data Science Course" class="w-36 h-32 xl:w-72 xl:h-40">
+                            </div>
+
+                            <div class="w-80 h-44 bg-[#73D2DE] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40">
+                                <p>Node JS</p>
+                                <img src="assets/img/courses/da.svg" alt="Data Analysis Course" class="w-32 h-36">
+                            </div>
+
+                            <div class="w-80 h-44 bg-[#73D2DE] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40">
+                                <p>Tailwind</p>
+                                <img src="assets/img/courses/tailwind.png" alt="JavaScript Course" class="w-36 h-24">
+                            </div>
+
+                            <div class="w-80 h-44 bg-[#73D2DE] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40">
                                 <p>Node JS</p>
                                 <img src="assets/img/courses/nodejs.svg" alt="JavaScript Course" class="w-32 h-36">
                             </div>
 
-                            <div class="w-80 h-44 bg-[#8F2D56] grid place-items-center grid-flow-col rounded-3xl">
+                            <div class="w-80 h-44 bg-[#73D2DE] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40">
+                                <p>Tailwind</p>
+                                <img src="assets/img/courses/tailwind.png" alt="JavaScript Course" class="w-36 h-24 ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-8 pb-14 text-2xl 2xl:text-xl xl:text-lg xs:px-5">
+                    <h1 class="font-semibold mb-10">Tutorials</h1>
+
+                    <div class="relative px-10 2xl:px-6">
+                        <button type="button" onclick="scrolltoLeft('bt3')" class="absolute z-10 bg-white bg-opacity-50 shadow-black drop-shadow-md size-14 rounded-full left-0 top-1/2 transform -translate-y-1/2 2xl:size-10 xl:size-8">
+                            <svg class="text-soft-blue stroke-soft-blue m-auto size-10 2xl:size-6 xl:size-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd" />
+                            </svg>       
+                        </button>
+                        <button type="button" onclick="scrolltoRight('bt3')" class="absolute z-10 bg-white bg-opacity-50 shadow-black drop-shadow-md size-14 rounded-full right-0 top-1/2 transform -translate-y-1/2 2xl:size-10 xl:size-8">
+                            <svg class="text-soft-blue stroke-soft-blue m-auto size-10 2xl:size-6 xl:size-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                   
+                        <div class="scrollContainer text-white font-semibold grid grid-flow-col overflow-y-scroll no-scrollbar gap-5">
+                            <div class="w-80 h-44 bg-[#FC8955] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40">
+                                <p class="inline-block">Python</p>
+                                <img src="assets/img/courses/python.svg" alt="Python Course" class="w-28 h-32">
+                            </div>
+
+                            <div class="w-80 h-44 bg-[#FC8955] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40">
+                                <p>Java</p>
+                                <img src="assets/img/courses/java.svg" alt="Java Course" class="w-36 h-32 ">
+                            </div>
+
+                            <div class="w-80 h-44 bg-[#FC8955] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40">
+                                <p>C++</p>
+                                <img src="assets/img/courses/c++.svg" alt="C++ Course" class="w-32 h-36">
+                            </div>
+
+                            <div class="w-80 h-44 bg-[#FC8955] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40">
+                                <p>Tailwind</p>
+                                <img src="assets/img/courses/tailwind.png" alt="JavaScript Course" class="w-36 h-24">
+                            </div>
+
+                            <div class="w-80 h-44 bg-[#FC8955] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40">
+                                <p>Node JS</p>
+                                <img src="assets/img/courses/nodejs.svg" alt="JavaScript Course" class="w-32 h-36">
+                            </div>
+
+                            <div class="w-80 h-44 bg-[#FC8955] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40">
                                 <p>Tailwind</p>
                                 <img src="assets/img/courses/tailwind.png" alt="JavaScript Course" class="w-36 h-24 ">
                             </div>
@@ -212,71 +266,9 @@
     </main>
 
     <!-- FOOTER-->
-    <footer class="bg-dark-blue h-[445px] grid place-content-center">
-        <div class="container max-w-xl2 pl-2 pr-2 2xl:max-w-xl xl:max-w-lg lg:max-w-md md:max-w-sm sm:max-w-xs xs:w-full">
-            <div class="grid grid-rows-1 grid-cols-4 justify-items-center">
-                <div class="row-span-2 grid gap-9 ml-20 mr-20">
-                    <div>
-                        <h1 class="text-5xl italic text-white"><a href="#"><span class="text-soft-blue">W3</span>Program</a></h1>
-                        <div class="grid grid-flow-col items-center w-80 pt-5">
-                            <a href="https://maps.app.goo.gl/UBAYhLkn5XSy2LXN8" target="_blank" class="inline-flex grid-flow-col items-center gap-3">
-                                <svg class="text-soft-blue size-7 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                                </svg>
-                                <p class="text-base font-light text-white inline-block w-72 hover:underline">AgaTech Sovereign Corporate Baao, Camarines Sur, 4432, Philippines</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="grid grid-flow-col w-56">
-                        <a href="https://www.facebook.com/Agaseeyyy" target="_blank"><img src="assets/img/Facebook.svg" alt="Facebook Page"></a>
-                        <a href="https://www.instagram.com/_agaseeyyy" target="_blank"><img src="assets/img/Instagram.svg" alt="Instagram Account"></a>
-                        <a href="https://www.twitter.com" target="_blank"><img src="assets/img/TwitterX.svg" alt="TwitterX"></a>
-                        <a href="https://github.com/Agaseeyyy" target="_blank"><img src="assets/img/GitHub.svg" alt="Github"></a>
-                    </div>
-
-                    <div class="grid grid-flow-col">
-                        <a href="https://play.google.com" target="_blank"><img src="assets/img/Google Play.svg" alt="Google Play Store"></a>
-                        <a href="https://www.apple.com/ph/app-store/" target="_blank"><img src="assets/img/App Store.svg" alt="Apple Store"></a>
-                    </div>
-                </div>
-                
-                <nav>
-                    <h1 class="text-xl text-soft-blue font-semibold mb-2">Company</h1>
-                    <ul class="text-white text-base font-light grid gap-3">
-                        <li class="hover:underline"><a href="#">About us</a></li>
-                        <li class="hover:underline"><a href="contact.html">Contact us</a></li>
-                        <li  class="hover:underline"><a href="privacy.html">Privacy Policy</a></li>
-                        <li class="hover:underline"><a href="terms.html">Terms & Conditions</a></li>
-                        <li class="hover:underline"><a href="#">FAQs</a></li>
-                    </ul>
-                </nav>
-
-                <nav>
-                    <h1 class="text-xl text-soft-blue font-semibold mb-2">Languages</h1>
-                    <ul class="text-white text-base font-light grid gap-3">
-                        <li class="hover:underline"><a href="#">Python</a></li>
-                        <li class="hover:underline"><a href="#">Java</a></li>
-                        <li class="hover:underline"><a href="#">JavaScript</a></li>
-                        <li class="hover:underline"><a href="#">C++</a></li>
-                        <li class="hover:underline"><a href="#">PHP</a></li>
-                    </ul>
-                </nav>
- 
-                <nav>
-                    <h1 class="text-xl text-soft-blue font-semibold mb-2">Documentations</h1>
-                    <ul class="text-white text-base font-light grid gap-3">
-                        <li class="hover:underline"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML Documentations</a></li>
-                        <li class="hover:underline"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS Documentations</a></li>
-                        <li class="hover:underline"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript Documentations</a></li>
-                        <li class="hover:underline"><a href="https://code.visualstudio.com/docs">VSCode Documentations</a></li>
-                        <li class="hover:underline"><a href="https://roadmap.sh" target="_blank">Computer Studies Roadmap</a></li>
-                    </ul>
-                </nav>
-            </div>
-        <p class="text-white text-base font-extralight flex justify-center pt-12">© 2024 W3Program, AgaTech Sovereign Corporate. All rights reserved.</p>
-        </div>
-    </footer>
+    <special-footer></special-footer>
+    <!-- ENDS -->
+    <script src="headerFooterManager.js"></script>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

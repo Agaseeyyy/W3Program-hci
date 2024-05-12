@@ -8,54 +8,57 @@
     <link rel="stylesheet" href="output.css">
 </head>
 <body class="font-opensans">
-    <div id="container" class="container max-w-xl2 pl-2 pr-2 2xl:max-w-xl xl:max-w-lg lg:max-w-md md:max-w-sm sm:max-w-xs xs:w-full">
-        <header class="grid grid-flow-col relative">
-            <a href="index.html"><img src="assets/img/head.png" alt="logo" class="size-[100px]"></a>
-            <button class="back self-center absolute right-0 rounded-3xl hover:bg-black hover:bg-opacity-5 transition duration-200 ease-in-out" onclick="goBack()">
-                <svg class="size-10 text-black text-opacity-50" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                </svg>
-            </button>
-        </header>
-    </div>
+    <header>
+        <div id="container" class="container max-w-xl2 pl-2 pr-2 2xl:max-w-xl xl:max-w-lg lg:max-w-md md:max-w-sm sm:max-w-xs xs:w-full">
+
+            <nav class="flex justify-between">
+                <a href="index.html" class="justify-self-start xs:px-5"><img src="assets/img/head.png" alt="logo" width="100px" height="100px" class="size-[100px] 2xl:size-20 xl:size-16 lg:size-14"></a>
+                <button class="self-center justify-self-end rounded-3xl hover:bg-black hover:bg-opacity-5 transition duration-200 ease-in-out" onclick="goBack()">
+                    <svg class="size-10 text-black text-opacity-50" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </nav>
+            
+        </div>
+    </header>
     <!-- ENDS -->
 
     <!--LOGIN-->
-    <section id="contact" class="bg-[#eaeaea]">
-        <div id="container" class="container max-w-xl2 grid place-content-center pl-2 pr-2 2xl:max-w-xl xl:max-w-lg lg:max-w-md md:max-w-sm sm:max-w-xs xs:w-full">
+    <section class="bg-[#eaeaea] xs:bg-white">
+        <div id="container" class="container max-w-xl2 pl-2 pr-2 2xl:max-w-xl xl:max-w-lg lg:max-w-md md:max-w-sm sm:max-w-xs xs:w-full grid place-items-center">
            
-            <div class="w-[500px] h-[850px] bg-white border border-soft-blue rounded-3xl grid grid-flow-row my-24">
-                <h1 class="self-center text-2xl font-bold pl-10">Welcome Back!</h1>
+            <div class="w-[500px] h-[850px] bg-white border border-soft-blue rounded-3xl grid grid-flow-row p-10 my-16 xs:border-none xs:rounded-none sm:w-[450px] xs:my-0 xs:w-full">
+                <h1 class="text-2xl font-bold">Welcome Back!</h1>
                 
                 <form action="" method="get" class="grid place-items-center place-content-center grid-flow-row gap-5">
-                    <label for="username" class="w-[420px] text-base font-semibold">Username
-                        <input type="text" name="username" id="username" class="w-[420px] h-14 border border-soft-blue rounded-md px-4 py-2 focus:outline-none">
+                    <label for="username" class="w-[420px] text-base font-semibold sm:w-96 xs:w-full">Username
+                        <input type="text" name="username" id="username" class="w-[420px] h-14 border border-soft-blue rounded-md px-4 py-2 focus:outline-none sm:w-full xs:w-full">
                     </label>
-                    <label for="password" class="w-[420px] text-base font-semibold">Password
-                        <input type="password" name="password" id="password" class="w-[420px] h-14 border border-soft-blue rounded-md px-4 py-2 focus:outline-none">
-                        <input type="checkbox" name="showpass" id="showpass" class="absolute inset-y-0 right-0 mt-3 mr-3 cursor-pointer">
+                    <label for="password" class="w-[420px] text-base font-semibold sm:w-96 ">Password
+                        <input type="password" name="password" id="password" class="w-[420px] h-14 border border-soft-blue rounded-md px-4 py-2 focus:outline-none sm:w-full xs:w-full xs">
                     </label>
                     
-                    <div class="grid grid-flow-col gap-36">
+                    <div class="grid grid-flow-col gap-36 md:gap-28">
                         <label for="remember" class="text-base font-normal inline-flex items-center gap-3">
                             <input type="checkbox" id="remember" name="remember" class="size-4 accent-soft-blue"> Remember Me
                         </label>
                         <a href="">Forget password</a>
                     </div>
-                    <button class="w-[420px] h-16 bg-soft-blue rounded-[35px] text-white text-xl font-bold self-start hover:bg-[#157ABE] duration-200 ease-in-out focus:outline-none" type="submit">Login</button>
+                    <button class="w-[420px] h-16 bg-soft-blue rounded-[35px] text-white text-xl font-bold self-start hover:bg-[#157ABE] duration-200 ease-in-out focus:outline-none sm:w-96 " type="submit">Login</button>
                     <p class="justify-self-start text-base font-semibold">Need an account? <a href="signup.html" class="text-soft-blue font-bold">Sign up</a></p>
-                    <div class="flex flex-row items-center gap-3">
-                        <div class="w-48 h-px bg-black bg-opacity-50"></div>
+                    <div class="w-full flex flex-row items-center gap-3">
+                        <div class="w-full h-px bg-black bg-opacity-50"></div>
                         <p>or</p>
-                        <div class="w-48 h-px bg-black bg-opacity-50"></div>
+                        <div class="w-full h-px bg-black bg-opacity-50"></div>
                     </div>
                 </form>
-                <div class="grid place-items-center h-60">
-                    <button class="inline-flex items-center justify-center gap-3 w-[420px] h-16 bg-[#1877F2] rounded-[35px] text-white text-xl font-light hover:bg-[#157ABE] duration-200 ease-in-out focus:outline-none" type="submit">
+                <div class="grid place-items-center h-60 w-full">
+                    <button class="inline-flex items-center justify-center gap-3 w-[420px]  h-16 bg-[#1877F2] rounded-[35px] text-white text-xl font-light hover:bg-[#157ABE] duration-200 ease-in-out focus:outline-none sm:w-full" type="submit">
                     <img src="assets/img/login0.svg" alt="FB Login"> Continue with Facebook</button>
-                    <button class="inline-flex items-center justify-center gap-3 w-[420px] h-16 border border-black border-opacity-50 rounded-[35px] text-xl font-light hover:bg-[#157ABE] duration-200 ease-in-out focus:outline-none" type="submit">
+                    <button class="inline-flex items-center justify-center gap-3 w-[420px] h-16 border border-black border-opacity-50 rounded-[35px] text-xl font-light hover:bg-[#157ABE] duration-200 ease-in-out focus:outline-none sm:w-full" type="submit">
                     <img src="assets/img/login1.svg" alt="Google Login"> Continue with Google</button>
-                    <button class="inline-flex items-center justify-center gap-3 w-[420px] h-16 border border-black border-opacity-50 rounded-[35px] text-xl font-light hover:bg-[#157ABE] duration-200 ease-in-out focus:outline-none" type="submit">
+                    <button class="inline-flex items-center justify-center gap-3 w-[420px] h-16 border border-black border-opacity-50 rounded-[35px] text-xl font-light hover:bg-[#157ABE] duration-200 ease-in-out focus:outline-none sm:w-full" type="submit">
                     <img src="assets/img/login2.svg" alt="Github Login"> Continue with GitHub</button>
                 </div>
                
@@ -66,9 +69,14 @@
     <!--ENDS-->
     
     <!--FOOTER-->
-    <footer class="bg-[#eaeaea] grid place-content-center text-black text-opacity-50">
-        <p>© 2024 W3Program, AgaTech Sovereign Corporate. All rights reserved.</p>
+    <footer class="bg-[#eaeaea] xs:bg-white ">
+        <div class="container max-w-xl2 pl-2 pr-2 2xl:max-w-xl xl:max-w-lg lg:max-w-md md:max-w-sm sm:max-w-xs xs:w-full">
+            <span class="grid place-content-center text-black text-opacity-50 xs:px-5">
+                <p>© 2024 W3Program, AgaTech Sovereign Corporate. All rights reserved.</p>
+            </span>
+        </div>
     </footer>
+    <!-- ENDS -->
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
