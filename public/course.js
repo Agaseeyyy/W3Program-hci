@@ -30,24 +30,28 @@ fetch('https://youtube.googleapis.com/youtube/v3/videos?part=snippet&id=kUMe1FH4
       };
     });
 
-    const courseHome = document.getElementById("courseHome");
-    courseHome.addEventListener("click", event => {
-      courses.style.display = "none";
-      localStorage.removeItem("selectedCourse");
-    });
+    const courseHome = document.querySelectorAll("li");
+    courseHome.forEach(coursehome => {
+      coursehome.addEventListener("click", () => {
+        courses.style.display = "none";
+        sessionStorage.removeItem("selectedCourse");
+      });
+    })
+    
+    
 
     courseIds.forEach(id => {
       const courseElement = document.getElementById(id);
-      courseElement.addEventListener("click", event => {
+      courseElement.addEventListener("click", () => {
         courses.style.display = "none";
-        localStorage.setItem("selectedCourse", id);
+        sessionStorage.setItem("selectedCourse", id);
         loadContent(id);
       });
     });
 
-    const storedCourse = localStorage.getItem('selectedCourse');
+    const storedCourse = sessionStorage.getItem('selectedCourse');
 
-    if (storedCourse){
+    if(storedCourse){
       courses.style.display = "none";
       loadContent(storedCourse);
     }
@@ -175,52 +179,56 @@ function loadContent(courseId){
   }
   
   const course1 = copyContent.querySelector("#course1");
-  course1.addEventListener("click", (event) => {
-    localStorage.removeItem("selectedCourse");
-    console.log(course1.classList.item(10))
+  course1.addEventListener("click", () => {
+    sessionStorage.removeItem("selectedCourse");
     loadContent(course1.classList.item(10))
+    document.getElementById("displayCourse").remove(copyContent);
     const selectedCourse = course1.classList.item(10);
-    localStorage.setItem("selectedCourse", selectedCourse);
-    window.location.reload(location.href);
+    sessionStorage.setItem("selectedCourse", selectedCourse);
+    window.location.reload();
   });
 
   const course2 = copyContent.querySelector("#course2");
-  course2.addEventListener("click", (event) => {
-    localStorage.removeItem('selectedCourse');
-    loadContent(course2.classList.item(10))
+  course2.addEventListener("click", () => {
+    sessionStorage.removeItem('selectedCourse');
+    loadContent(course2.classList.item(10));
+    document.getElementById("displayCourse").remove(copyContent);
     const selectedCourse = course2.classList.item(10);
-    localStorage.setItem("selectedCourse", selectedCourse);
-    window.location.reload(location.href);
+    sessionStorage.setItem("selectedCourse", selectedCourse);
+    window.location.reload();
   });
 
   const course3 = copyContent.querySelector("#course3");
-  course3.addEventListener("click", (event) => {
-    localStorage.removeItem('selectedCourse');
-    loadContent(course3.classList.item(10))
+  course3.addEventListener("click", () => {
+    sessionStorage.removeItem('selectedCourse');
+    loadContent(course3.classList.item(10));
+    document.getElementById("displayCourse").remove(copyContent);
     const selectedCourse = course3.classList.item(10);
-    localStorage.setItem("selectedCourse", selectedCourse);
-    window.location.reload(location.href);
+    sessionStorage.setItem("selectedCourse", selectedCourse);
+    window.location.reload();
   });
 
   const course4 = copyContent.querySelector("#course4");
-  course4.addEventListener("click", (event) => {
-    localStorage.removeItem('selectedCourse');
-    loadContent(course4.classList.item(10))
+  course4.addEventListener("click", () => {
+    sessionStorage.removeItem('selectedCourse');
+    loadContent(course4.classList.item(10));
+    document.getElementById("displayCourse").remove(copyContent);
     const selectedCourse = course4.classList.item(10);
-    localStorage.setItem("selectedCourse", selectedCourse);
-    window.location.reload(location.href);
+    sessionStorage.setItem("selectedCourse", selectedCourse);
+    window.location.reload();
   });
 
   const course5 = copyContent.querySelector("#course5");
-  course5.addEventListener("click", (event) => {
-    localStorage.removeItem('selectedCourse');
+  course5.addEventListener("click", () => {
+    sessionStorage.removeItem('selectedCourse');
     loadContent(course5.classList.item(10))
+    document.getElementById("displayCourse").remove(copyContent);
     const selectedCourse = course5.classList.item(10);
-    localStorage.setItem("selectedCourse", selectedCourse);
-    window.location.reload(location.href);
+    sessionStorage.setItem("selectedCourse", selectedCourse);
+    window.location.reload();
   });
   
-  document.getElementById("displayCourse").prepend(copyContent);
+  document.getElementById("displayCourse").append(copyContent);
 }
 
 function formatDescription(text){
@@ -327,3 +335,7 @@ let proglanguages = ({
     course: "php",
   }
 })
+
+window.addEventListener("beforeunload", function(event) {
+  window.scrollTo(0, 0); 
+});

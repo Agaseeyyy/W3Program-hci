@@ -3,11 +3,11 @@ class SpecialHeader extends HTMLElement{
         this.innerHTML =`
         <header class="grid sticky top-0 z-50 bg-white">
             <div id="container" class="container max-w-xl2 pl-2 pr-2 2xl:max-w-xl xl:max-w-lg lg:max-w-md md:max-w-sm sm:max-w-xs xs:w-full ">
-                <nav class="grid grid-flow-col place-items-center text-xl 2xl:text-base xl:text-base lg:text-sm xs: md:gap-3">
+                <nav class="grid grid-flow-col place-items-center text-xl 2xl:text-base xl:text-base lg:text-sm xs: md:gap-3 xs:gap-0">
                     
-                    <a href="index.html" class="justify-self-start xs:px-5 z-50 md:px-0"><img src="assets/img/head.png" alt="logo" width="100px" height="100px" class="size-[100px] 2xl:size-20 xl:size-16 lg:size-14 md:px-0"></a>
+                    <a href="index.html" id="courseHome" class="justify-self-start z-50 md:px-0"><img src="assets/img/head.png" alt="logo" width="100px" height="100px" class="size-[100px] 2xl:size-20 xl:size-16 lg:size-14 md:px-0"></a>
                     
-                    <form class="grid place-items-center grid-flow-col border border-soft-blue rounded-[30px] h-11 w-80  2xl:w-72 2xl:h-10  xl:w-64  lg:w-48 lg:h-8 md:z-50 md:justify-self-start xs:w-32">
+                    <form class="grid place-items-center grid-flow-col overflow-hidden border border-soft-blue rounded-[30px] h-11 w-80  2xl:w-72 2xl:h-10  xl:w-64  lg:w-48 lg:h-8 md:z-50 md:justify-self-start xs:w-32">
                         <input type="search" name="search" placeholder="Search . . ." class="place-self-center italic pl-2 [&::-webkit-search-cancel-button]:hidden border-none rounded-md focus:outline-none xs:w-24">
                         <button type="submit" class="size-11 rounded-full hover:bg-black hover:bg-opacity-5 transition duration-300 ease-in-out 2xl:size-10 xl:size-10 lg:size-8">
                             <svg class="ml-auto mr-auto size-5 lg:size-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
@@ -23,7 +23,7 @@ class SpecialHeader extends HTMLElement{
                     </button>
 
                     <ul class="mobileMenu flex flex-row gap-5 font-semibold md:flex-col md:absolute md:bg-white md:w-full md:mt-64 items-center md:gap-6 md:pt-5 md:hidden">
-                        <li class="hover:text-soft-blue duration-200 ease-in-out"><a href="index.html">HOME</a></li>
+                        <li class="hover:text-soft-blue duration-200 ease-in-out"><a href="index.html" id="courseHome">HOME</a></li>
                         <li class="hover:text-soft-blue duration-200 ease-in-out"><a href="course.html" id="courseHome">COURSES</a></li>
                         <li class="hover:text-soft-blue duration-200 ease-in-out"><a href="about.html">ABOUT</a></li>
                         <li class="hover:text-soft-blue duration-200 ease-in-out"><a href="contact.html">CONTACT</a></li>
@@ -49,8 +49,8 @@ class SpecialFooter extends HTMLElement{
         this.innerHTML =`
         <footer class="bg-dark-blue pt-16 pb-3 grid place-content-center sm:pt-5">
             <div class="container max-w-xl2 pl-2 pr-2 2xl:max-w-xl xl:max-w-lg lg:max-w-md md:max-w-sm sm:max-w-xs xs:w-full">
-                <div class="grid grid-rows-1 grid-cols-4 justify-items-center text-base 2xl:text-sm lg:text-xs sm:grid-rows-2 xs:px-5">
-                    <div class="row-span-2 grid gap-y-7 sm:row-span-1 sm:col-span-2 sm:gap-y-3 ">
+                <div class="grid grid-rows-1 grid-cols-4 justify-items-center text-base 2xl:text-sm lg:text-xs sm:grid-rows-2 xs:px-5 xs:grid-cols-1 xs:grid-rows-2">
+                    <div class="row-span-2 grid gap-y-7 sm:row-span-1 sm:col-span-2 sm:gap-y-3 xs:col-span-2 xs:">
                         <div>
                             <h1 class="text-5xl italic text-white 2xl:text-4xl lg:text-2xl"><a href="#"><span class="text-soft-blue">W3</span>Program</a></h1>
                             <div class="grid grid-flow-col items-center pt-2">
@@ -76,7 +76,7 @@ class SpecialFooter extends HTMLElement{
                         </div>
                     </div>
                 
-                    <nav>
+                    <nav class="xs:col-span-2">
                         <h1 class="text-xl text-soft-blue font-semibold mb-2 2xl:text-base">Company</h1>
                         <ul class="text-white font-light grid gap-3">
                             <li class="hover:underline"><a href="about.html">About us</a></li>
@@ -87,7 +87,7 @@ class SpecialFooter extends HTMLElement{
                         </ul>
                     </nav>
     
-                    <nav>
+                    <nav class="xs:justify-self-start">
                         <h1 class="text-xl text-soft-blue font-semibold mb-2 2xl:text-base">Languages</h1>
                         <ul class="text-white font-light grid gap-3">
                             <li class="hover:underline"><a href="#">Python</a></li>
@@ -109,7 +109,7 @@ class SpecialFooter extends HTMLElement{
                         </ul>
                     </nav>
                 </div>
-                <p class="text-white text-base font-extralight flex justify-center pt-12 2xl:text-sm md:text-xs sm:pt-0">© 2024 W3Program, AgaTech Sovereign Corporate. All rights reserved.</p>
+                <p class="text-white text-base font-extralight flex text-center px-5 justify-center pt-12 2xl:text-sm md:text-xs sm:pt-0">© 2024 W3Program, AgaTech Sovereign Corporate. All rights reserved.</p>
             </div>
         </footer>
         `
