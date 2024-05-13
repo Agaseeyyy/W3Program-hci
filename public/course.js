@@ -14,7 +14,7 @@ const courseIds = [
   "python",
   "java",
   "cpp",
-  "c#"
+  "c#",
 ];
 
 const videoData = {};
@@ -28,9 +28,10 @@ fetch('https://youtube.googleapis.com/youtube/v3/videos?part=snippet&id=kUMe1FH4
         description: data.items[index].snippet.description,
         videoId: data.items[index].id,
       };
-    });
+    })
+    
 
-    const courseHome = document.querySelectorAll("li");
+    const courseHome = document.querySelectorAll("#courseHome");
     courseHome.forEach(coursehome => {
       coursehome.addEventListener("click", () => {
         courses.style.display = "none";
@@ -38,8 +39,6 @@ fetch('https://youtube.googleapis.com/youtube/v3/videos?part=snippet&id=kUMe1FH4
       });
     })
     
-    
-
     courseIds.forEach(id => {
       const courseElement = document.getElementById(id);
       courseElement.addEventListener("click", () => {
@@ -229,6 +228,7 @@ function loadContent(courseId){
   });
   
   document.getElementById("displayCourse").append(copyContent);
+   window.scrollTo(0, 0);
 }
 
 function formatDescription(text){
@@ -338,4 +338,13 @@ let proglanguages = ({
 
 window.addEventListener("beforeunload", function(event) {
   window.scrollTo(0, 0); 
+});
+
+window.addEventListener("hashchange", function() {
+  const history = window.location.hash;
+  if(history != "#course"){
+    courses.style.display = "block";
+    sessionStorage.removeItem("selectedCourse");
+    window.location.reload()
+  }
 });

@@ -25,8 +25,8 @@ class SpecialHeader extends HTMLElement{
                     <ul class="mobileMenu flex flex-row gap-5 font-semibold md:flex-col md:absolute md:bg-white md:w-full md:mt-64 items-center md:gap-6 md:pt-5 md:hidden">
                         <li class="hover:text-soft-blue duration-200 ease-in-out"><a href="index.html" id="courseHome">HOME</a></li>
                         <li class="hover:text-soft-blue duration-200 ease-in-out"><a href="course.html" id="courseHome">COURSES</a></li>
-                        <li class="hover:text-soft-blue duration-200 ease-in-out"><a href="about.html">ABOUT</a></li>
-                        <li class="hover:text-soft-blue duration-200 ease-in-out"><a href="contact.html">CONTACT</a></li>
+                        <li class="hover:text-soft-blue duration-200 ease-in-out"><a href="about.html" id="courseHome">ABOUT</a></li>
+                        <li class="hover:text-soft-blue duration-200 ease-in-out"><a href="contact.html" id="courseHome">CONTACT</a></li>
                     
 
                         <div class="z-50 md:flex md:flex-row md:justify-start md:gap-3">
@@ -90,11 +90,11 @@ class SpecialFooter extends HTMLElement{
                     <nav class="xs:justify-self-start">
                         <h1 class="text-xl text-soft-blue font-semibold mb-2 2xl:text-base">Languages</h1>
                         <ul class="text-white font-light grid gap-3">
-                            <li class="hover:underline"><a href="#">Python</a></li>
-                            <li class="hover:underline"><a href="#">Java</a></li>
-                            <li class="hover:underline"><a href="#">JavaScript</a></li>
-                            <li class="hover:underline"><a href="#">C++</a></li>
-                            <li class="hover:underline"><a href="#">PHP</a></li>
+                            <li class="hover:underline"><a href="https://docs.python.org/3/" target="_blank">Python</a></li>
+                            <li class="hover:underline"><a href="https://docs.oracle.com/javase/8/docs/" target="_blank">Java</a></li>
+                            <li class="hover:underline"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a></li>
+                            <li class="hover:underline"><a href="https://devdocs.io/cpp/" target="_blank">C++</a></li>
+                            <li class="hover:underline"><a href="https://www.php.net/manual/en/" target="_blank">PHP</a></li>
                         </ul>
                     </nav>
     

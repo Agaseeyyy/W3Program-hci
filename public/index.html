@@ -13,6 +13,7 @@
     <!-- ENDS -->
 
     <!-- HOME -->
+    <div id="displayCourse" class="max-h-[800px] overflow-y-auto"></div>
     <main id="courses">
         <section id="home" class="bg-center bg-cover pt-20 xs:pt-36" style="background-image: url('assets/img/bghome.jpg');">
             <div class="container max-w-xl2 pl-2 pr-2 2xl:max-w-xl xl:max-w-lg lg:max-w-md md:max-w-sm sm:max-w-xs xs:w-full">
@@ -60,7 +61,7 @@
                         structure and framework for web pages by using a set of tags and attributes to define elements such as 
                         headings, paragraphs, links, images, and other content.</p>
                     <div class="grid grid-flow-row gap-7 2xl:gap-5 2xl:mt-3">
-                        <button id="html" class="w-72 h-14 rounded-[30px] bg-soft-blue text-white font-bold hover:hover:bg-[#157ABE] duration-200 ease-in-out 2xl:w-64 2xl:h-12  xl:w-56 xl:h-10">Learn HTML</button>
+                        <a href="index.html#course"><button id="html" class="w-72 h-14 rounded-[30px] bg-soft-blue text-white font-bold hover:hover:bg-[#157ABE] duration-200 ease-in-out 2xl:w-64 2xl:h-12  xl:w-56 xl:h-10">Learn HTML</button></a>
                         <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><button class="w-72 h-14 rounded-[30px] bg-dark-blue text-white font-bold hover:bg-[#293675] duration-200 ease-in-out 2xl:w-64 2xl:h-12  xl:w-56 xl:h-10">Documentations</button></a>
                     </div>
                 </div>
@@ -80,7 +81,7 @@
                         XML documents. It allows web developers to control the layout, colors, fonts, and other visual aspects of a 
                         webpage. CSS works by targeting HTML elements and applying styles to modify their appearance and behavior</p>
                     <div class="grid grid-flow-row gap-7 2xl:gap-5 2xl:mt-3">
-                        <button id="css" class="w-72 h-14 rounded-[30px] bg-soft-blue text-white font-bold hover:bg-[#157ABE] duration-200 ease-in-out 2xl:w-64 2xl:h-12  xl:w-56 xl:h-10">Learn CSS</button>
+                        <a href="index.html#course"><button id="css" class="w-72 h-14 rounded-[30px] bg-soft-blue text-white font-bold hover:bg-[#157ABE] duration-200 ease-in-out 2xl:w-64 2xl:h-12  xl:w-56 xl:h-10">Learn CSS</button></a>
                         <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><button class="w-72 h-14 rounded-[30px] bg-dark-blue text-white font-bold hover:bg-[#293675] duration-200 ease-in-out 2xl:w-64 2xl:h-12  xl:w-56 xl:h-10">Documentations</button></a>
                     </div>
                 </div>
@@ -100,7 +101,7 @@
                         interactive and dynamic web content. It runs on the client side of web applications, enabling manipulation of 
                         HTML and CSS, handling user interactions, and communicating with servers asynchronously.</p>
                     <div class="grid grid-flow-row gap-7 2xl:gap-5 2xl:mt-3">
-                        <button id="js" class="w-72 h-14 rounded-[30px] bg-soft-blue text-white font-bold hover:bg-[#157ABE] duration-200 ease-in-out 2xl:w-64 2xl:h-12  xl:w-56 xl:h-10">Learn JavaScript</button>
+                        <a href="index.html#course"><button id="js" class="w-72 h-14 rounded-[30px] bg-soft-blue text-white font-bold hover:bg-[#157ABE] duration-200 ease-in-out 2xl:w-64 2xl:h-12  xl:w-56 xl:h-10">Learn JavaScript</button></a>
                         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><button class="w-72 h-14 rounded-[30px] bg-dark-blue text-white font-bold hover:bg-[#293675] duration-200 ease-in-out 2xl:w-64 2xl:h-12  xl:w-56 xl:h-10">Documentations</button></a>
                     </div>
                 </div>
@@ -128,34 +129,27 @@
                             </svg>
                         </button>
                    
-                        <div class="scrollContainer text-white font-semibold grid grid-flow-col overflow-y-scroll no-scrollbar gap-5">
-                            
-                            
-                            <div id="js" class="w-80 h-44 cursor-pointer bg-[#8F2D56] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40 xs:w-60 xs:h-36">
-                                <p class="inline-block xs:text-base">JavaScript</p>
-                                <img src="assets/img/courses/javascript.png" alt="JavaScript Course" class="w-28 xs:w-20">
-                            </div>
-                            
+                        <div class="scrollContainer text-white font-semibold grid grid-flow-col overflow-y-scroll no-scrollbar gap-5">        
 
-                            <div id="react" class="w-80 h-44 cursor-pointer bg-[#8F2D56] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40 xs:w-60 xs:h-36">
+                            <a href="index.html#course"><div id="react" class="w-80 h-44 cursor-pointer bg-[#8F2D56] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40 xs:w-60 xs:h-36">
                                 <p class="xs:text-base">React</p>
                                 <img src="assets/img/courses/react.svg" alt="JavaScript Course" class="w-32 xs:w-24">
-                            </div>
+                            </div></a>
 
-                            <div id="nodejs" class="w-80 h-44 cursor-pointer bg-[#8F2D56] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40 xs:w-60 xs:h-36">
+                            <a href="index.html#course"><div id="nodejs" class="w-80 h-44 cursor-pointer bg-[#8F2D56] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40 xs:w-60 xs:h-36">
                                 <p class="xs:text-base">Node JS</p>
                                 <img src="assets/img/courses/nodejs.svg" alt="JavaScript Course" class="w-32 xs:w-24">
-                            </div>
+                            </div></a>
 
-                            <div id="bootstrap" class="w-80 h-44 cursor-pointer bg-[#8F2D56] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40 xs:w-60 xs:h-36">
+                            <a href="index.html#course"><div id="bootstrap" class="w-80 h-44 cursor-pointer bg-[#8F2D56] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40 xs:w-60 xs:h-36">
                                 <p class="xs:text-base">Bootstrap</p>
                                 <img src="assets/img/courses/boostrap.png" alt="JavaScript Course" class="w-28 xs:w-24">
-                            </div>
+                            </div></a>
 
-                            <div id="php" class="w-80 h-44 cursor-pointer bg-[#8F2D56] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40 xs:w-60 xs:h-36">
+                            <a href="index.html#course"><div id="php" class="w-80 h-44 cursor-pointer bg-[#8F2D56] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40 xs:w-60 xs:h-36">
                                 <p class="xs:text-base">PHP</p>
                                 <img src="assets/img/courses/php.png" alt="JavaScript Course" class="w-36 xs:w-28">
-                            </div>
+                            </div></a>
 
                         </div>
                     </div>
@@ -178,25 +172,25 @@
                    
                         <div class="scrollContainer text-white font-semibold grid grid-flow-col overflow-y-scroll no-scrollbar gap-5">
 
-                            <div id="ml" class="w-80 h-44 cursor-pointer bg-[#73D2DE] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40 xs:w-60 xs:h-36">
+                            <a href="index.html#course"><div id="ml" class="w-80 h-44 cursor-pointer bg-[#73D2DE] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40 xs:w-60 xs:h-36">
                                 <p class="inline-block xs:text-base">Machine <br>Learning</p>
                                 <img src="assets/img/courses/ml.svg" alt="Machine Learning Course" class="w-28 xs:w-20">
-                            </div>
+                            </div></a>
 
-                            <div id="da" class="w-80 h-44 cursor-pointer bg-[#73D2DE] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40 xs:w-60 xs:h-36">
+                            <a href="index.html#course"><div id="da" class="w-80 h-44 cursor-pointer bg-[#73D2DE] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40 xs:w-60 xs:h-36">
                                 <p class="xs:text-base">Data <br>Analysis</p>
                                 <img src="assets/img/courses/dataanalysis.png" alt="Data Science Course" class="w-36 xs:w-28">
-                            </div>
+                            </div></a>
 
-                            <div id="dl" class="w-80 h-44 cursor-pointer bg-[#73D2DE] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40 xs:w-60 xs:h-36">
+                            <a href="index.html#course"><div id="dl" class="w-80 h-44 cursor-pointer bg-[#73D2DE] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40 xs:w-60 xs:h-36">
                                 <p class="xs:text-base">Deep Learning</p>
                                 <img src="assets/img/courses/deeplearning.png" alt="Deep learning" class="w-28 xs:w-24">
-                            </div>
+                            </div></a>
 
-                            <div id="python" class="w-80 h-44 cursor-pointer bg-[#73D2DE] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40 xs:w-60 xs:h-36">
+                            <a href="index.html#course"><div id="pyth" class="w-80 h-44 cursor-pointer bg-[#73D2DE] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40 xs:w-60 xs:h-36">
                                 <p class="xs:text-base">Python</p>
-                                <img src="assets/img/courses/python.png" alt="JavaScript Course" class="w-28 xs:w-24">
-                            </div>
+                                <img src="assets/img/courses/python.png" alt="Deep learning" class="w-28 xs:w-24">
+                            </div></a>
 
                         </div>
                     </div>
@@ -219,25 +213,25 @@
                    
                         <div class="scrollContainer text-white font-semibold grid grid-flow-col overflow-y-scroll no-scrollbar gap-5">
 
-                            <div id="python" class="w-80 h-44  cursor-pointer bg-[#FC8955] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40 xs:w-60 xs:h-36">
+                            <a href="index.html#course"><div id="python" class="w-80 h-44  cursor-pointer bg-[#FC8955] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40 xs:w-60 xs:h-36">
                                 <p class="inline-block xs:text-base">Python</p>
                                 <img src="assets/img/courses/python.png" alt="Python Course" class="w-28 xs:w-24">
-                            </div>
+                            </div></a>
 
-                            <div id="java" class="w-80 h-44 cursor-pointer bg-[#FC8955] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40 xs:w-60 xs:h-36">
+                            <a href="index.html#course"><div id="java" class="w-80 h-44 cursor-pointer bg-[#FC8955] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40 xs:w-60 xs:h-36">
                                 <p class="xs:text-base">Java</p>
                                 <img src="assets/img/courses/j1.png" alt="Java Course" class="w-36 xs:w-28">
-                            </div>
+                            </div></a>
 
-                            <div id="cpp" class="w-80 h-44 cursor-pointer bg-[#FC8955] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40 xs:w-60 xs:h-36">
+                            <a href="index.html#course"><div id="cpp" class="w-80 h-44 cursor-pointer bg-[#FC8955] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40 xs:w-60 xs:h-36">
                                 <p class="xs:text-base">C++</p>
                                 <img src="assets/img/courses/c++.png" alt="C++ Course" class="w-28 xs:w-24">
-                            </div>
+                            </div></a>
 
-                            <div id="c#" class="w-80 h-44 cursor-pointer bg-[#FC8955] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40 xs:w-60 xs:h-36">
+                            <a href="index.html#course"><div id="c#" class="w-80 h-44 cursor-pointer bg-[#FC8955] grid place-items-center grid-flow-col rounded-3xl xl:w-72 xl:h-40 xs:w-60 xs:h-36">
                                 <p class="xs:text-base">C#</p>
                                 <img src="assets/img/courses/csharp.png" alt="C# Course" class="w-28">
-                            </div>
+                            </div></a>
 
                         </div>
                     </div>
@@ -248,7 +242,7 @@
     </main>
 
     <!-- COURSE IS OPEN -->
-    <div id="displayCourse"></div>
+   
 
     <template id="course-clicked">
         <section class="bg-[#F9FAFD] min-h-screen">

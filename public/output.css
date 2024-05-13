@@ -896,6 +896,47 @@ video {
   height: 1px;
 }
 
+.h-screen{
+  height: 100vh;
+}
+
+.h-\[1500px\]{
+  height: 1500px;
+}
+
+.max-h-max{
+  max-height: -moz-max-content;
+  max-height: max-content;
+}
+
+.max-h-screen{
+  max-height: 100vh;
+}
+
+.max-h-full{
+  max-height: 100%;
+}
+
+.max-h-svh{
+  max-height: 100svh;
+}
+
+.max-h-\[100px\]{
+  max-height: 100px;
+}
+
+.max-h-\[1000px\]{
+  max-height: 1000px;
+}
+
+.max-h-\[500px\]{
+  max-height: 500px;
+}
+
+.max-h-\[800px\]{
+  max-height: 800px;
+}
+
 .min-h-screen{
   min-height: 100vh;
 }
@@ -996,16 +1037,6 @@ video {
 
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-@keyframes pulse{
-  50%{
-    opacity: .5;
-  }
-}
-
-.animate-pulse{
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .cursor-pointer{
@@ -1174,6 +1205,10 @@ video {
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.overflow-y-auto{
+  overflow-y: auto;
 }
 
 .overflow-y-scroll{
