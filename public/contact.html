@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - W3Program</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <link rel="icon" href="assets/img/head.png">
     <link rel="stylesheet" href="output.css">
+    
 </head>
 <body class="font-opensans">
     <special-header></special-header>
@@ -22,19 +25,19 @@
                         <img src="assets/img/c2.svg" alt="Clipart 2" class="2xl:w-80 xl:w-72">
                     </div>
                     
-                    <form class="drop-shadow-2xl  bg-white border border-soft-blue rounded-3xl  p-8 grid grid-flow-row place-items-center w-[500px] h-[694px] 2xl:w-4/6 2xl:h-full xl:w-3/4 xl:my-10 lg:w-11/12 md:w-2/3 sm:w-11/12 xs:w-full xs:border-none xs:rounded-none xs:drop-shadow-none xs:py-0" action="">
+                    <form id="contacts" class="drop-shadow-2xl  bg-white border border-soft-blue rounded-3xl  p-8 grid grid-flow-row place-items-center w-[500px] h-[694px] 2xl:w-4/6 2xl:h-full xl:w-3/4 xl:my-10 lg:w-11/12 md:w-2/3 sm:w-11/12 xs:w-full xs:border-none xs:rounded-none xs:drop-shadow-none xs:py-0">
                         <h1 class="text-2xl font-bold place-self-start 2xl:text-xl xl:text-lg">Contact Us</h1>
                         <div class="flex flex-col w-full gap-y-2">
                             <label for="name" class="font-semibold">Name</label>
-                            <input type="text" name="name" id="name" placeholder="Enter your Name" class="h-14 border border-soft-blue rounded-md px-4 py-2 focus:outline-none 2xl:h-12 lg:h-10 lg:text-xs xs:h-12">
+                            <input type="text" id="name" placeholder="Enter your Name" class="h-14 border border-soft-blue rounded-md px-4 py-2 focus:outline-none 2xl:h-12 lg:h-10 lg:text-xs xs:h-12">
                         </div>
                         <div class="flex flex-col w-full gap-y-2">
                             <label for="email" class="font-semibold">Email</label>
-                            <input type="email" name="email" id="message" placeholder="Enter your Email Address" class="h-14 border border-soft-blue rounded-md px-4 py-2 focus:outline-none 2xl:h-12 lg:h-10 lg:text-xs xs:h-12">
+                            <input type="email" id="email" placeholder="Enter your Email Address" class="h-14 border border-soft-blue rounded-md px-4 py-2 focus:outline-none 2xl:h-12 lg:h-10 lg:text-xs xs:h-12">
                         </div>
                         <div class="flex flex-col w-full gap-y-2">
                             <label for="message" class="font-semibold">Message</label>
-                            <textarea id="message" name="message" rows="4" cols="size-full" placeholder="Enter messages" class="h-44 border border-soft-blue rounded-md px-4 py-2 focus:outline-none lg:text-xs lg:h-32 xs:h-44"></textarea>
+                            <textarea id="message" rows="4" cols="size-full" placeholder="Enter messages" class="h-44 border border-soft-blue rounded-md px-4 py-2 focus:outline-none lg:text-xs lg:h-32 xs:h-44"></textarea>
                         </div>
 
                         <button class="w-full h-16 bg-soft-blue rounded-[35px] text-white font-bold self-start hover:bg-[#157ABE] duration-200 ease-in-out focus:outline-none 2xl:h-12 2xl:self-end lg:h-10 lg:text-xs xs:h-12 xs:text-sm" type="submit">Send</button>
@@ -50,6 +53,7 @@
     <special-footer></special-footer>
     <!-- ENDS -->
     <script src="headerFooterManager.js"></script>
+    
     <script src="script.js"></script>
 </body>
 </html>
