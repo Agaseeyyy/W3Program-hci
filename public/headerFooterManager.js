@@ -83,7 +83,6 @@ class SpecialFooter extends HTMLElement{
                             <li class="hover:underline"><a href="contact.html">Contact us</a></li>
                             <li  class="hover:underline"><a href="privacy.html">Privacy Policy</a></li>
                             <li class="hover:underline"><a href="terms.html">Terms & Conditions</a></li>
-                            <li class="hover:underline"><a href="#">FAQs</a></li>
                         </ul>
                     </nav>
     
